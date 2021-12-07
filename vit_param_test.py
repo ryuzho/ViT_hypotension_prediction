@@ -59,7 +59,7 @@ print ( 'Invasive: {} | Multi: {} | Pred lag: {}'.format ( invasive, multi, pred
 print( 'dim :{}  |   mtx_width : {}  |   patch_size : {}'.format(dim, mtx_width, patch_size))
 print( 'Lin_depth : {}  |  Lin_heads : {}  |  Lin_k : {}'.format(lin_depth, lin_heads,lin_k))
 
-for _ in range(3): #n번 반복 실험
+for _ in range(30): #n번 반복 실험
     
     
     # Prespecifications
@@ -82,7 +82,7 @@ for _ in range(3): #n번 반복 실험
     num_workers = 0
     batch_size = 128
     #max_epoch = 200
-    max_epoch = 15
+    max_epoch = 20
 
     train_ratio = 0.6 # Size for training dataset
     valid_ratio = 0.1 # Size for validation dataset
